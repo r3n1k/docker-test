@@ -18,6 +18,6 @@
 <body>
 	<h1 style="color:green;"> Hello World by Renik ! </h1>
 	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
-	<?php if($_SERVER["REMOTE_ADDR"]) {?><h3>Your address is <?php echo $_SERVER["REMOTE_ADDR"]; ?></h3><?php } ?>
+	<?php if($_ENV["USER"]) {?><h3>My user is <?php echo $_ENV["USER"]; ?></h3><?php } ?>
 		</body>
 </html>
