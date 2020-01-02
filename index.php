@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Hello Osones</title>
+	<title>Hello Girl</title>
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 	<style>
 	body {
@@ -18,5 +18,6 @@
 <body>
 	<h1 style="color:green;"> Hello World by Renik ! </h1>
 	<?php if($_ENV["HOSTNAME"]) {?><h3>My hostname is <?php echo $_ENV["HOSTNAME"]; ?></h3><?php } ?>
+	<?php if($_SERVER["REMOTE_ADDR"]) {?><h3>Your address is <?php echo $_SERVER["REMOTE_ADDR"]; ?></h3><?php } ?>
 		</body>
 </html>
